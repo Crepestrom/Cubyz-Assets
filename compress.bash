@@ -8,6 +8,12 @@ do
 	ffmpeg -i $item -b:a 128k output/${item%.*}.ogg -v error
 done
 
+for item in `find music -name "*.zig.zon"`
+do
+	mkdir -p output/${item%/*}
+	cp $item output/$item
+done
+
 for item in `find sounds | grep ".*\.ogg\|.*\.mp3\|.*\.qoa\|.*\.wav\|.*\.flac"`
 do
 	mkdir -p output/${item%/*}
