@@ -8,4 +8,10 @@ do
 	ffmpeg -i $item -b:a 128k output/${item%.*}.ogg -v error
 done
 
+for item in `find sounds | grep ".*\.ogg\|.*\.mp3\|.*\.qoa\|.*\.wav\|.*\.flac"`
+do
+	mkdir -p output/${item%/*}
+	ffmpeg -i $item -b:a 128k output/${item%.*}.ogg -v error
+done
+
 cp -r fonts output/fonts
