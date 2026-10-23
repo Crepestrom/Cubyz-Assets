@@ -17,7 +17,7 @@ done
 for item in `find sounds | grep ".*\.ogg\|.*\.mp3\|.*\.qoa\|.*\.wav\|.*\.flac"`
 do
 	mkdir -p output/${item%/*}
-	ffmpeg -i $item -b:a sounds/${item%.*}.ogg -v error
+	ffmpeg -i $item -b:a output/${item%.*}.ogg -v error
 done
 
 cp -r fonts output/fonts
