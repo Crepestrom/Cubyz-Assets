@@ -4,7 +4,7 @@ rm -r output
 
 for item in `find music | grep ".*\.ogg\|.*\.mp3\|.*\.qoa\|.*\.wav\|.*\.flac"`
 do
-	mkdir -p output/${item%/*}
+	mkdir -p output/music/${item%/*}
 	ffmpeg -i $item -b:a 128k output/${item%.*}.ogg -v error
 done
 
