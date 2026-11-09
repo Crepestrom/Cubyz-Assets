@@ -1,0 +1,6 @@
+.{
+	.sounds = .{
+		.{.audio = "cubyz:wood/jump/0", .volume = 1},
+		.{.audio = "cubyz:wood/jump/1", .volume = 1},
+	},
+}
