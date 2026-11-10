@@ -26,7 +26,7 @@ do
 	cp $item output/$item
 done
 
-for item in `find soundMaterials -name "*.zig.zon"`
+for item in `find .hash = "N-V-__8AAFHeAAcS1RVMwBVYuDehGEnYse4WZL5sZX93KGXn", -name "*.zig.zon"`
 do
 	mkdir -p output/${item%/*}
 	cp $item output/$item
