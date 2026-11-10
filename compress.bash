@@ -26,4 +26,10 @@ do
 	cp $item output/$item
 done
 
+for item in `find soundMaterials -name "*.zig.zon"`
+do
+	mkdir -p output/${item%/*}
+	cp $item output/$item
+done
+
 cp -r fonts output/fonts
