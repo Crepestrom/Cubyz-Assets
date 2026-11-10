@@ -1,0 +1,8 @@
+.{
+	.blockBreak = "cubyz:default_material/break",
+	.hit = "cubyz:default_material/hit",
+	.jump = "cubyz:default_material/jump",
+	.land = "cubyz:default_material/land",
+	.place = "cubyz:default_material/place",
+	.step = "cubyz:default_material/step",
+}

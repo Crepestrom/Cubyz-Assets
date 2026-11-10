@@ -1,0 +1,8 @@
+.{
+	.blockBreak = "cubyz:wood/break",
+	.hit = "cubyz:wood/hit",
+	.jump = "cubyz:wood/jump",
+	.land = "cubyz:wood/land",
+	.place = "cubyz:wood/place",
+	.step = "cubyz:wood/step",
+}
